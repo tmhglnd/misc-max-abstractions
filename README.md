@@ -22,6 +22,8 @@ Timo Hoogland (c) 2019 www.timohoogland.com
 
 - **mira.port.web** - *launch mira.frame in the browser on localhost with a bang*
 
+- **msbalance~** - *change the balance of mid/side information in a stereo signal*
+
 - **r~** - *Abbreviated abstraction for receive~*
 
 - **s~** - *Abbreviated abstraction for send~*
