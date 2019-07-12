@@ -39,13 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-7",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 345.0, 364.0, 65.0, 22.0 ],
+					"text" : "print MIRA"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-13",
-					"linecount" : 2,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 370.0, 45.0, 157.0, 33.0 ],
-					"text" : "launch a browser for running the mira.frame"
+					"patching_rect" : [ 370.0, 45.0, 157.0, 100.0 ],
+					"text" : "launch a websocket and  browser for running the mira.frame\n\nip adress and port number printed to console on initialization"
 				}
 
 			}
@@ -106,7 +117,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 220.0, 45.0, 30.0, 30.0 ]
+					"patching_rect" : [ 146.0, 45.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -117,7 +128,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "bang", "bang" ],
-					"patching_rect" : [ 45.0, 87.0, 120.0, 22.0 ],
+					"patching_rect" : [ 45.0, 87.0, 32.0, 22.0 ],
 					"text" : "t b b"
 				}
 
@@ -129,7 +140,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 267.0, 87.0, 60.0, 22.0 ],
+					"patching_rect" : [ 183.0, 87.0, 60.0, 22.0 ],
 					"text" : "loadbang"
 				}
 
@@ -141,7 +152,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 45.0, 334.0, 120.0, 22.0 ],
+					"patching_rect" : [ 45.0, 364.0, 38.0, 22.0 ],
 					"text" : "zl.reg"
 				}
 
@@ -154,7 +165,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 146.0, 280.0, 134.0, 35.0 ],
+					"patching_rect" : [ 146.0, 300.0, 134.0, 35.0 ],
 					"text" : "sprintf symout http://%s:%d/?port=%d"
 				}
 
@@ -167,7 +178,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 295.0, 280.0, 232.0, 35.0 ],
+					"patching_rect" : [ 295.0, 300.0, 232.0, 35.0 ],
 					"text" : "sprintf websocket connection available at http://%s:%d"
 				}
 
@@ -180,7 +191,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 295.0, 364.0, 30.0, 30.0 ]
+					"patching_rect" : [ 295.0, 394.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -192,7 +203,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 364.0, 131.0, 35.0 ],
+					"patching_rect" : [ 45.0, 394.0, 131.0, 35.0 ],
 					"text" : ";\rmax launchbrowser $1"
 				}
 
@@ -228,7 +239,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 276.5, 124.5, 155.5, 124.5 ],
 					"source" : [ "obj-15", 0 ]
 				}
 
@@ -250,7 +260,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 0 ],
-					"midpoints" : [ 229.5, 114.5, 155.5, 114.5 ],
 					"source" : [ "obj-19", 0 ]
 				}
 
@@ -265,6 +274,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"order" : 1,
+					"source" : [ "obj-3", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"order" : 0,
 					"source" : [ "obj-3", 0 ]
 				}
 
@@ -309,7 +327,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
-					"midpoints" : [ 155.5, 268.0, 304.5, 268.0 ],
 					"order" : 0,
 					"source" : [ "obj-8", 0 ]
 				}
