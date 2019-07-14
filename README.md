@@ -30,6 +30,8 @@ Timo Hoogland (c) 2019 www.timohoogland.com
 
 - **sign~** - *Return the sign of a signal*
 
+- **squash~** - *Simple audio signal compression/squashing (based on patch by Peter McCulloch)*
+
 - **uniquename** - *Generate a unique name based on time + ticks*
 
 ## Install
