@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 6,
+			"revision" : 7,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,12 +39,24 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-9",
+					"maxclass" : "newobj",
+					"numinlets" : 4,
+					"numoutlets" : 4,
+					"outlettype" : [ "bang", "bang", "bang", "" ],
+					"patching_rect" : [ 102.833333333333314, 135.0, 192.500000000000057, 22.0 ],
+					"text" : "sel 114 121 104"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 89.833333333333314, 279.0, 32.0, 22.0 ],
+					"patching_rect" : [ 102.833333333333314, 105.0, 32.0, 22.0 ],
 					"text" : "gate"
 				}
 
@@ -56,7 +68,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 45.0, 144.0, 77.0, 22.0 ],
+					"patching_rect" : [ 45.0, 204.0, 77.0, 22.0 ],
 					"text" : "fullscreen $1"
 				}
 
@@ -68,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 315.0, 279.0, 150.0, 47.0 ],
+					"patching_rect" : [ 315.0, 339.0, 150.0, 47.0 ],
 					"text" : "Timo Hoogland\nwww.timohoogland.com\nMIT License © 2019"
 				}
 
@@ -80,7 +92,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 163.0, 279.0, 82.0, 22.0 ],
+					"patching_rect" : [ 144.666666666666686, 45.0, 82.0, 22.0 ],
 					"text" : "patcherargs 0"
 				}
 
@@ -94,7 +106,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 68.5, 204.0, 30.0, 30.0 ]
+					"patching_rect" : [ 102.833333333333314, 37.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -106,7 +118,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 218.5, 114.0, 24.0, 24.0 ],
+					"patching_rect" : [ 218.5, 174.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_shortname" : "toggle[1]",
@@ -131,7 +143,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 218.5, 234.0, 73.0, 22.0 ],
+					"patching_rect" : [ 218.5, 294.0, 73.0, 22.0 ],
 					"text" : "high_res $1"
 				}
 
@@ -144,7 +156,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 45.0, 114.0, 24.0, 24.0 ]
+					"patching_rect" : [ 45.0, 174.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -157,7 +169,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 330.0, 30.0, 30.0 ]
+					"patching_rect" : [ 45.0, 356.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -168,7 +180,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 315.0, 45.0, 240.0, 141.0 ],
+					"patching_rect" : [ 315.0, 135.0, 240.0, 141.0 ],
 					"text" : "fullscreen\nfew short keys for jit.gl.render or jit.world\n\nr = render enable\ny = floating enable\nh = high res enable\nesc = fullscreen enable\n\nenable/disable extra shortcuts with an additional argument 1 or toggle in inlet"
 				}
 
@@ -181,7 +193,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 160.666666666666657, 114.0, 24.0, 24.0 ],
+					"patching_rect" : [ 160.666666666666657, 174.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_shortname" : "toggle",
@@ -206,7 +218,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 160.666666666666657, 204.0, 66.0, 22.0 ],
+					"patching_rect" : [ 160.666666666666657, 264.0, 66.0, 22.0 ],
 					"text" : "floating $1"
 				}
 
@@ -218,7 +230,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 102.833333333333314, 174.0, 61.0, 22.0 ],
+					"patching_rect" : [ 102.833333333333314, 234.0, 61.0, 22.0 ],
 					"text" : "enable $1"
 				}
 
@@ -231,7 +243,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 102.833333333333314, 114.0, 24.0, 24.0 ]
+					"patching_rect" : [ 102.833333333333314, 174.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -239,11 +251,11 @@
 				"box" : 				{
 					"id" : "obj-2",
 					"maxclass" : "newobj",
-					"numinlets" : 5,
-					"numoutlets" : 5,
-					"outlettype" : [ "bang", "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 45.0, 75.0, 250.333333333333258, 22.0 ],
-					"text" : "sel 27 114 121 104"
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 45.0, 135.0, 41.0, 22.0 ],
+					"text" : "sel 27"
 				}
 
 			}
@@ -263,6 +275,15 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 1 ],
+					"order" : 0,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -283,7 +304,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 1 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-13", 0 ]
 				}
 
@@ -311,29 +332,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-2", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
 					"source" : [ "obj-2", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-15", 0 ],
-					"source" : [ "obj-2", 3 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-2", 1 ]
 				}
 
 			}
@@ -346,7 +346,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-25", 0 ]
 				}
 
@@ -360,15 +360,36 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 1 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 1 ],
+					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-9", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-9", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
