@@ -24,6 +24,8 @@ Timo Hoogland (c) 2019 www.timohoogland.com
 
 - **msbalance~** - *change the balance of mid/side information in a stereo signal*
 
+- **monostereo~** - *change the balance of mono/stereo in a stereo signal*
+
 - **r~** - *Abbreviated abstraction for receive~*
 
 - **s~** - *Abbreviated abstraction for send~*
