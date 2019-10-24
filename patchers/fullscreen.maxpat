@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 0,
-			"revision" : 7,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -92,8 +92,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 144.666666666666686, 45.0, 82.0, 22.0 ],
-					"text" : "patcherargs 0"
+					"patching_rect" : [ 144.666666666666686, 45.0, 72.0, 22.0 ],
+					"text" : "patcherargs"
 				}
 
 			}
@@ -121,13 +121,13 @@
 					"patching_rect" : [ 218.5, 174.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "toggle[1]",
-							"parameter_type" : 3,
 							"parameter_longname" : "toggle[1]",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 0 ]
+							"parameter_initial" : [ 0 ],
+							"parameter_shortname" : "toggle[1]",
+							"parameter_type" : 3
 						}
 
 					}
@@ -196,13 +196,13 @@
 					"patching_rect" : [ 160.666666666666657, 174.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "toggle",
-							"parameter_type" : 3,
 							"parameter_longname" : "toggle",
 							"parameter_initial_enable" : 1,
 							"parameter_invisible" : 1,
 							"parameter_mmax" : 1.0,
-							"parameter_initial" : [ 1 ]
+							"parameter_initial" : [ 1 ],
+							"parameter_shortname" : "toggle",
+							"parameter_type" : 3
 						}
 
 					}
