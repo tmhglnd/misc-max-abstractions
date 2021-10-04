@@ -20,15 +20,19 @@ Timo Hoogland (c) 2019 www.timohoogland.com
 
 - **hidecursor** - *Hide the cursor when idle for three seconds*
 
+- **jit.gl.snapshot** - *Export an image of a texture or matrix from jit.world with a single bang*
+
 - **mira.port.web** - *launch mira.frame in the browser on localhost with a bang*
 
 - **msbalance~** - *change the balance of mid/side information in a stereo signal*
 
 - **monostereo~** - *change the balance of mono/stereo in a stereo signal*
 
-- **r~** - *Abbreviated abstraction for receive~*
+- **pause~** - *Allow for a feedback-loop between msp objects, introduces 1 signalvector latency*
 
-- **s~** - *Abbreviated abstraction for send~*
+- **r~** - *Abbreviated abstraction for receive~* **deprecated as of Max 8.2**
+
+- **s~** - *Abbreviated abstraction for send~* **deprecated as of Max 8.2**
 
 - **sign~** - *Return the sign of a signal*
 
