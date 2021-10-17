@@ -12,6 +12,8 @@ Timo Hoogland (c) 2019 www.timohoogland.com
 
 - **cputimer** - *Return a precise time interval between two events*
 
+- **ctlfox** - *Input and store/recall Faderfox EC4 controller values, works with high-resolution LSB/MSB MIDI, allows scaling of 0 - 16384 hires range*
+
 - **ezbiquad~** - *Biquad~ and Filtercoeff~ wrapped in one object*
 
 - **fft.tomatrix~** - *Store a FFT-frame in a jitter matrix*
