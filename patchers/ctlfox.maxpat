@@ -40,6 +40,17 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 325.0, 765.0, 153.0, 20.0 ],
+					"text" : "limit the input data to range"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-34",
 					"linecount" : 3,
 					"maxclass" : "comment",
@@ -57,7 +68,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 435.0, 45.0, 214.0, 74.0 ],
+					"patching_rect" : [ 422.0, 45.0, 214.0, 74.0 ],
 					"text" : "Allow to input the absolute HiRes values from the FaderFox EC4 midi controller, store them in a pattrstorage or preset and be able to recall the values to the device"
 				}
 
@@ -116,7 +127,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 437.0, 408.0, 29.5, 22.0 ],
+					"patching_rect" : [ 422.0, 408.0, 29.5, 22.0 ],
 					"text" : "!- 1"
 				}
 
@@ -246,8 +257,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 437.0, 378.0, 65.0, 22.0 ],
-					"text" : "route hires"
+					"patching_rect" : [ 422.0, 378.0, 50.0, 22.0 ],
+					"text" : "route hr"
 				}
 
 			}
@@ -389,8 +400,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 518.0, 183.0, 210.0, 127.0 ],
-					"text" : "arguments:\n\nController Value (default=0)\nMidi Channel (default=1)\nLow-output (default=0)\nHi-output (default=1)\n\nattributes:\n@hires (default=0)"
+					"patching_rect" : [ 480.0, 157.0, 210.0, 127.0 ],
+					"text" : "arguments:\n\nController Value (default=0)\nMidi Channel (default=1)\nLow-output (default=0)\nHi-output (default=1)\n\nattributes:\n@hr (default=1)"
 				}
 
 			}
@@ -413,22 +424,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 293.0, 187.0, 163.0, 22.0 ],
-					"text" : "patcherargs 0 1 0 1 @hires 0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "(int) Midi Channel",
-					"cool" : 1,
-					"id" : "obj-3",
-					"index" : 3,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 225.600000000000023, 157.0, 30.0, 30.0 ]
+					"patching_rect" : [ 293.0, 187.0, 148.0, 22.0 ],
+					"text" : "patcherargs 0 1 0 1 @hr 1"
 				}
 
 			}
@@ -614,21 +611,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "(int) Controller Number",
-					"cool" : 1,
-					"id" : "obj-245",
-					"index" : 2,
-					"maxclass" : "inlet",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 165.0, 157.0, 30.0, 30.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"comment" : "Raw Midi to Device Sync",
+					"comment" : "(float) Scaled midi controller value",
 					"id" : "obj-247",
 					"index" : 1,
 					"maxclass" : "outlet",
@@ -869,13 +852,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-27", 0 ],
-					"source" : [ "obj-245", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-28", 0 ],
 					"order" : 0,
 					"source" : [ "obj-25", 0 ]
@@ -917,13 +893,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-18", 0 ],
 					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-23", 0 ],
-					"source" : [ "obj-3", 0 ]
 				}
 
 			}
