@@ -401,7 +401,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 480.0, 157.0, 210.0, 127.0 ],
-					"text" : "arguments:\n\nController Value (default=0)\nMidi Channel (default=1)\nLow-output (default=0)\nHi-output (default=1)\n\nattributes:\n@hr (default=1)"
+					"text" : "arguments:\n\nController Value (default=0)\nMidi Channel (default=1)\nLow-output (default=0)\nHi-output (default=1)\n\nattributes:\n@hr (default=0)"
 				}
 
 			}
@@ -425,7 +425,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 293.0, 187.0, 148.0, 22.0 ],
-					"text" : "patcherargs 0 1 0 1 @hr 1"
+					"text" : "patcherargs 0 1 0 1 @hr 0"
 				}
 
 			}
@@ -461,7 +461,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 146.0, 885.0, 40.0, 22.0 ],
-					"text" : "* 127."
+					"text" : "* 128."
 				}
 
 			}
@@ -497,7 +497,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"patching_rect" : [ 141.0, 637.0, 39.0, 22.0 ],
-					"text" : "/ 127."
+					"text" : "/ 128."
 				}
 
 			}
