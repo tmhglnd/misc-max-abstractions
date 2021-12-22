@@ -8,6 +8,8 @@ Timo Hoogland (c) 2019 www.timohoogland.com
 
 - **!pow** - *Raise the right inlet to power of the left inlet*
 
+- **accum.density~** - *measure density of bangs over time*
+
 - **benchmark** - *Test the speed of an algorithm over multiple iterations*
 
 - **cputimer** - *Return a precise time interval between two events*
@@ -26,9 +28,11 @@ Timo Hoogland (c) 2019 www.timohoogland.com
 
 - **mira.port.web** - *launch mira.frame in the browser on localhost with a bang*
 
+- **monostereo~** - *change the balance of mono/stereo in a stereo signal*
+
 - **msbalance~** - *change the balance of mid/side information in a stereo signal*
 
-- **monostereo~** - *change the balance of mono/stereo in a stereo signal*
+- **mstotime** - *convert milliseconds to time (mm ss ms)*
 
 - **pause~** - *Allow for a feedback-loop between msp objects, introduces 1 signalvector latency*
 
@@ -40,7 +44,17 @@ Timo Hoogland (c) 2019 www.timohoogland.com
 
 - **squash~** - *Simple audio signal compression/squashing (based on patch by Peter McCulloch)*
 
+- **thread.check** - *Check what thread your patch-cord is in (main, scheduler, audio)*
+
+- **tickstotime** - *convert ticks, relative to transport, to time (mm ss ms)*
+
+- **timetoms** - *convert time (mm ss ms) to milliseconds*
+
+- **timetoticks** - *convert time (mm ss ms) to ticks, relative to transport*
+
 - **uniquename** - *Generate a unique name based on time + ticks*
+
+- **zl.streamed** - *Like zl.stream but initially fills with 0's*
 
 ## Install
 
