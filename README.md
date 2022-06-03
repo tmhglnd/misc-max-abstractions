@@ -26,6 +26,8 @@ Timo Hoogland (c) 2019 www.timohoogland.com
 
 - **jit.gl.snapshot** - *Export an image of a texture or matrix from jit.world with a single bang*
 
+- **jit.msp.sync~** - *Send a click and white frame flash, useful to sync an audiovisual recording in post edit*
+
 - **mira.port.web** - *launch mira.frame in the browser on localhost with a bang*
 
 - **monostereo~** - *change the balance of mono/stereo in a stereo signal*
